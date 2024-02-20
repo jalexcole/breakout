@@ -1,0 +1,40 @@
+//! **Recent Updates:**
+//!
+//! Version 0.5.0 reset the default availability of optional features,
+//! at a cost of incompatibility with some previous build configurations.
+//!
+//! Versions 0.4.5 and 0.4.6 provided bug fixes, especially concerning the
+//! Hash trait for cstr, expanded abilities to concatenate strings. All
+//! string types except for `fstr` now support no_std.
+//!
+//! Version 0.4.4 added the optional `cstr` type.
+//!
+//! Version 0.4.3 added the optional `Sharestr` type along with other, minor
+//! enhancements.
+//!
+//! Version 0.4.2 improved the implementation of zstr to require all bytes
+//! following the first zero byte to also be zeros, which allows the length
+//! of the string to be found by binary search.  
+//!
+//! Version 0.4.0 introduced no_std support
+//!
+//! Version 0.3.2 introduced the [Flexstr] type.
+//!
+//! Version 0.3.1 implements `Deref<Target=str>` and removed
+//! some redundant procedures.  The functions `to_ascii_lowercase`
+//! and `to_ascii_uppercase` **has been renamed to `to_ascii_lower` and
+//! `to_ascii_upper`**, to avoid clash with those from the Deref trait.
+//!
+//! Version 0.2.12 includes contribution from
+//! [wallefan](https://github.com/wallefan),
+//! and added optional serde support for serialization.
+//! This feature can be enabled by giving cargo the
+//! **`--features serde`** option.
+//!
+//! Version 0.2.11 impls [core::fmt::Write], thereby enabling the [write!]
+//! macro. Also adds new macros [str_format!] and [try_format!].
+//!
+//! Version 0.2.10 allows str4-str128 strings to be concatenated with
+//! the `+` operator, resulting in strings with twice the capacity,
+//! str8-str256.  This feature is only implemented for the strN types.
+//!

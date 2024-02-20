@@ -1,0 +1,6 @@
+Now I'm wondering how do I test that locally before pushing everything on crates.io?
+
+Thanks!
+You can pass the cfg directly while building docs using cargo by setting the environment variable RUSTFLAGS="--cfg docsrs"
+
+---

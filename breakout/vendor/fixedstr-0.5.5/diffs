@@ -1,0 +1,19 @@
+20,21d19
+< 
+< #[cfg(not(feature = "no-alloc"))]
+25d22
+< #[cfg(not(feature = "no-alloc"))]
+29d25
+< #[cfg(not(feature = "no-alloc"))]
+144d139
+<     #[cfg(not(feature = "no-alloc"))]    
+411c406
+< #[cfg(not(feature = "no-alloc"))]
+---
+> // #[cfg(feature = "std")]
+419d413
+< #[cfg(not(feature = "no-alloc"))]
+507d500
+< #[cfg(not(feature = "no-alloc"))]
+514d506
+< #[cfg(not(feature = "no-alloc"))]
